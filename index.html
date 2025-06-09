@@ -97,6 +97,16 @@
             transition: all 0.5s ease;
             max-width: 200px;
             filter: drop-shadow(0 0 10px #3146ff4d);
+            animation: float 3s ease-in-out infinite; /* Added floating animation */
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0); /* Start and end at original position */
+            }
+            50% {
+                transform: translateY(-10px); /* Move up 10 pixels */
+            }
         }
 
         .hero-logo:hover {
@@ -243,7 +253,7 @@
                 </div>
                 <div class="hero-call-to-action-outer" onclick="window.location.href='https://discord.gg/HaUF3PFJ6p';">
                     <h3>Discord</h3>
-                    <p>Join our amazing Discord server for updates and more!</p>
+                    <p>Join our amazing Discord server!</p>
                 </div>
             </div>
         </div>
